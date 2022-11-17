@@ -66,7 +66,3 @@ class User {
 
   //Make a method to delete items from list
 }
-
-/*
-How to save all usernames and passwords beyond session? Need to run on server
- */

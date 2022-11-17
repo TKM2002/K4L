@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:knights4love_app/main.dart';
 import 'DashboardPages/Settings.dart';
 import 'DashboardPages/Messages.dart';
 import 'DashboardPages/Profile.dart';
@@ -178,3 +177,6 @@ Bottom bar:
 //https://www.codegrepper.com/search.php?answer_removed=1&q=displaying%20a%20row%20of%20icons%20in%20flutter
             
  */
+
+
+
