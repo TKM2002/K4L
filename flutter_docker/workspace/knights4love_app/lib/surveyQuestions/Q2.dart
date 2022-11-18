@@ -24,7 +24,7 @@ class Q2 extends StatelessWidget {
               onPressed: () {
                 Navigator.pushAndRemoveUntil(
                     context,
-                    MaterialPageRoute(builder: (context) => const Homepage()),
+                    MaterialPageRoute(builder: (context) => Homepage()),
                     (Route<dynamic> route) => false);
               },
             ),
@@ -51,7 +51,7 @@ class Q2 extends StatelessWidget {
             title: const Text('Answer 1'),
             trailing: const Icon(Icons.adjust),
             onTap: () => {
-              User(User.username, User.password),
+              User.addUser(User.username, User.password),
               User.addAnswer(1),
               Navigator.pushAndRemoveUntil(
                   context,
@@ -65,7 +65,7 @@ class Q2 extends StatelessWidget {
             title: const Text('Answer 2'),
             trailing: const Icon(Icons.adjust),
             onTap: () => {
-              User(User.username, User.password),
+              User.addUser(User.username, User.password),
               User.addAnswer(2),
               Navigator.pushAndRemoveUntil(
                   context,
@@ -82,7 +82,7 @@ class Q2 extends StatelessWidget {
             title: const Text('Answer 3'),
             trailing: const Icon(Icons.adjust),
             onTap: () => {
-              User(User.username, User.password),
+              User.addUser(User.username, User.password),
               User.addAnswer(3),
               Navigator.pushAndRemoveUntil(
                   context,
@@ -96,7 +96,7 @@ class Q2 extends StatelessWidget {
             title: const Text('Answer 4'),
             trailing: const Icon(Icons.adjust),
             onTap: () => {
-              User(User.username, User.password),
+              User.addUser(User.username, User.password),
               User.addAnswer(4),
               Navigator.pushAndRemoveUntil(
                   context,
@@ -110,7 +110,7 @@ class Q2 extends StatelessWidget {
             title: const Text('Answer 5'),
             trailing: const Icon(Icons.adjust),
             onTap: () => {
-              User(User.username, User.password),
+              User.addUser(User.username, User.password),
               User.addAnswer(5),
               Navigator.pushAndRemoveUntil(
                   context,

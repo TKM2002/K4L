@@ -104,13 +104,7 @@ class Dashboard extends StatelessWidget {
                 icon: const Icon(Icons.home),
                 tooltip: 'Go to the homepage',
                 color: const Color.fromARGB(255, 224, 203, 19),
-                onPressed: () {
-                  Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Dashboard()),
-                      (Route<dynamic> route) => false);
-                },
+                onPressed: () {},
               ),
 
               //Messages
@@ -121,8 +115,7 @@ class Dashboard extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) => const Dashboard()),
+                      MaterialPageRoute(builder: (context) => const Messages()),
                       (Route<dynamic> route) => false);
                 },
               ),
@@ -135,8 +128,7 @@ class Dashboard extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) => const Dashboard()),
+                      MaterialPageRoute(builder: (context) => const Profile()),
                       (Route<dynamic> route) => false);
                 },
               ),

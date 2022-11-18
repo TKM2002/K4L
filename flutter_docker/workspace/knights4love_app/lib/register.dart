@@ -70,7 +70,7 @@ class Register extends StatelessWidget {
                 child: TextButton(
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(
-                        const Color.fromARGB(255, 233, 6, 6)),
+                        const Color.fromARGB(255, 180, 17, 17)),
                     foregroundColor: MaterialStateProperty.all<Color>(
                         const Color.fromARGB(255, 224, 203, 19)),
                   ),

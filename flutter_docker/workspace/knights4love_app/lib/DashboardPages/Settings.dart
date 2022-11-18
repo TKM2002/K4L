@@ -1,5 +1,6 @@
-//Put logout here, just navigate to main.dart
 import 'package:flutter/material.dart';
+import 'package:knights4love_app/DashboardPages/Messages.dart';
+import 'package:knights4love_app/DashboardPages/Profile.dart';
 import 'package:knights4love_app/main.dart';
 import '../Dashboard.dart';
 
@@ -9,13 +10,9 @@ class Settings extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController username = TextEditingController();
-    TextEditingController password = TextEditingController();
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Settings'),
-        titleSpacing: 110,
         centerTitle: true,
       ),
       body: Center(
@@ -28,14 +25,14 @@ class Settings extends StatelessWidget {
           TextButton(
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(
-                    const Color.fromARGB(255, 233, 6, 6)),
+                    const Color.fromARGB(255, 180, 17, 17)),
                 foregroundColor: MaterialStateProperty.all<Color>(
                     const Color.fromARGB(255, 224, 203, 19)),
               ),
               onPressed: () {
                 Navigator.pushAndRemoveUntil(
                     context,
-                    MaterialPageRoute(builder: (context) => const Homepage()),
+                    MaterialPageRoute(builder: (context) => Homepage()),
                     (Route<dynamic> route) => false);
               },
               child: const Text(
@@ -75,8 +72,7 @@ class Settings extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) => const Dashboard()),
+                      MaterialPageRoute(builder: (context) => Messages()),
                       (Route<dynamic> route) => false);
                 },
               ),
@@ -89,8 +85,7 @@ class Settings extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) => const Dashboard()),
+                      MaterialPageRoute(builder: (context) => const Profile()),
                       (Route<dynamic> route) => false);
                 },
               ),
@@ -100,13 +95,7 @@ class Settings extends StatelessWidget {
                 icon: const Icon(Icons.settings),
                 tooltip: 'Go to the homepage',
                 color: const Color.fromARGB(255, 224, 203, 19),
-                onPressed: () {
-                  Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Dashboard()),
-                      (Route<dynamic> route) => false);
-                },
+                onPressed: () {},
               ),
             ],
           )),

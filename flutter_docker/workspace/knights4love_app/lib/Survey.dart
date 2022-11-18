@@ -10,6 +10,7 @@ class Survey extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController firstName = TextEditingController();
     TextEditingController lastName = TextEditingController();
+    TextEditingController age = TextEditingController();
 
     return Scaffold(
         appBar: AppBar(
@@ -26,7 +27,7 @@ class Survey extends StatelessWidget {
               onPressed: () {
                 Navigator.pushAndRemoveUntil(
                     context,
-                    MaterialPageRoute(builder: (context) => const Homepage()),
+                    MaterialPageRoute(builder: (context) => Homepage()),
                     (Route<dynamic> route) => false);
               },
             ),
@@ -69,6 +70,18 @@ class Survey extends StatelessWidget {
             ),
           ),
           const Spacer(
+            flex: 1,
+          ),
+
+          //AGE
+          TextField(
+            controller: age,
+            decoration: const InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: 'Age',
+            ),
+          ),
+          const Spacer(
             flex: 4,
           ),
 
@@ -76,13 +89,14 @@ class Survey extends StatelessWidget {
           TextButton(
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(
-                  const Color.fromARGB(255, 233, 6, 6)),
+                  const Color.fromARGB(255, 180, 17, 17)),
               foregroundColor: MaterialStateProperty.all<Color>(
                   const Color.fromARGB(255, 224, 203, 19)),
             ),
             onPressed: () {
               User.setFirst(firstName.text);
               User.setLast(lastName.text);
+              User.setAge(age.text);
               Navigator.pushAndRemoveUntil(
                   context,
                   MaterialPageRoute(builder: (context) => const Q1()),
@@ -99,7 +113,3 @@ class Survey extends StatelessWidget {
         ])));
   }
 }
-
-/*
-Put all questions into folder, just make lots of files
- */
