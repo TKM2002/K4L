@@ -80,6 +80,7 @@ class User extends StatefulWidget {
 
 }
 
+//get rid of this
 class _UserState extends State<User> {
   @override
   Widget build(BuildContext context) {

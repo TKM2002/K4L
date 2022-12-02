@@ -3,7 +3,7 @@ Use list tile for chats, put several icons in and show name
  */
 import 'package:flutter/material.dart';
 import 'package:knights4love_app/DashboardPages/MessageList.dart';
-import 'package:knights4love_app/DashboardPages/MessageUsers.dart';
+import 'package:knights4love_app/DashboardPages/MessageUsersandChats.dart';
 import 'package:knights4love_app/DashboardPages/Profile.dart';
 import 'package:knights4love_app/DashboardPages/Settings.dart';
 import 'package:knights4love_app/User.dart';
@@ -33,6 +33,7 @@ class _MessageState extends State<Messages> {
           //Chats
           //https://www.freecodecamp.org/news/build-a-chat-app-ui-with-flutter/
           //This shows how to make chat pages
+
           ListView.builder(
             shrinkWrap: true,
             itemCount: users.length,
@@ -103,3 +104,7 @@ class _MessageState extends State<Messages> {
     );
   }
 }
+
+
+//https://blog.logrocket.com/how-to-migrate-a-flutter-mobile-app-to-the-web/
+//convert to web and make database
